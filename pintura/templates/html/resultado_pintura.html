@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Resultado :</h1>
+    <h2> Com a Largura de {{Largura}} metros, e o comprimento de {{Comprimento}} metros. </h2>
+    <h2>A medida é: {{Resultado | slice:":5"}} metros quadrados.</h2>
+    <h2 >Seram necessários {{Total | slice:":5"}} litros de tinta.</h2>
+</body>
+</html>
